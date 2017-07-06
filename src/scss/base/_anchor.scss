@@ -1,0 +1,15 @@
+a  {
+	
+	
+	.contact & {
+	@include screen-desktop {
+		text-decoration: none;
+	}
+	}
+	
+	nav & {
+		color: $red;
+		text-decoration: none;
+	}
+	
+}
