@@ -4,4 +4,7 @@ var gulp 	= require('gulp'),
 
 gulp.task('watch', function() {
 	gulp.watch(config.sass.src, ['sass']);
+	gulp.watch(config.scripts.src, ['scripts']);
+	gulp.watch(config.images.src, ['images']);
+	gulp.watch(config.bower.src + config.bower.index, ['bower']);
 });

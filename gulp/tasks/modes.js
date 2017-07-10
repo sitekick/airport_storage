@@ -8,7 +8,9 @@ var gulp 			= require('gulp'),
 
 gulp.task('build', function() {
   runSequence(
-  	'sass',
+  	'delete',
+  	['sass','scripts','images'],
+  	'bower',
   	'watch',
   	'serve'
   	);

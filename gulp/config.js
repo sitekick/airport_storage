@@ -1,10 +1,10 @@
 module.exports = {
+	delete: {
+		dest: './assets/'
+	},
 	sass: {
 		src:  './src/scss/**/*.scss',
-		dest: { 
-			dev : './assets/css',
-			prod : './build/prod/assets/css'
-		},
+		dest: './assets/css', 
 		options: {
 			dev : {
 				style: 'expanded'
@@ -27,6 +27,25 @@ module.exports = {
 			'Android 4'
 		],
 		cascade: true
+	},
+	images: {
+		src:  [
+			'./src/img/*',
+			'./src/img/**/*',
+			'!./src/img/arch',
+			'!./src/img/arch/**/*'
+			],
+		dest: './assets/img'
+	},
+	scripts : {
+		dest : './assets/js',
+		src: './src/js/*.js'
+	},
+	bower:{
+		src : './src/templates/',
+		dest : './src/js/vendor',
+		index: 'index.php'
 	}
+
 }
 

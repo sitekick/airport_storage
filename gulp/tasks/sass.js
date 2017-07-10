@@ -21,7 +21,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(autoprefixer(config.autoprefixer))
     .pipe(sourcemaps.write('.', { includeContent: false, sourceRoot: 'src/scss' }))
-    .pipe(gulp.dest(config.sass.dest.dev));
+    .pipe(gulp.dest(config.sass.dest));
 });
 
 gulp.task('sass-P', function() {
@@ -32,5 +32,5 @@ gulp.task('sass-P', function() {
   	.pipe(cache('sass'))
     .pipe(plumber())
     .pipe(autoprefixer(config.autoprefixer))
-    .pipe(gulp.dest(config.sass.dest.prod));
+    .pipe(gulp.dest(config.sass.dest));
 });

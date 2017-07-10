@@ -1,9 +1,10 @@
 @import "utils/variables.scss";
 @import "utils/mixins.scss";
 
-@import "base/box.scss";
+//@import "base/box.scss";
+@import "../lib/bower/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "base/anchor.scss";
 
 @import "components/header.scss";
-@import "components/nav.scss";
+//@import "components/nav.scss";
 @import "components/footer.scss";
