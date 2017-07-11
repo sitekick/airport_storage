@@ -1,112 +1,50 @@
+html {
+	font-size: 100%;
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 100%;
 	font-family: sans-serif;
+
+/*
+@include screen-xs {
+	background-color: red;
+}
+@include screen-sm-and-up {
+	background-color: green;
+}
+@include screen-md-and-up {
+	background-color: blue;
+}
+@include screen-lg {
+	background-color: yellow
+}
+*/
 }
 
-header,
-nav,
-main,
-footer  {
-	margin: 1em 0;
-	text-align: center;
-	
-	.wrap  {
-		width: 98%;
-		margin: 0 auto;
-	}
-
-@include screen-desktop {
-	
-	.wrap {
-		width: 85%;
-	}
-}
-}
-
-main {
-	display: flex;
-	flex-flow: column nowrap;
-	
-	.flex-item {
-		width: 98%;
-		margin: 1em auto;
-		
-	}
-	.primary {
-		text-align: left;
-	}
-	.secondary {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
-		
-		section {
-			flex: 1;
-			background: rgba(0,0,0, .05);
-			}
-	}
-	
-	.tertiary {
-		//@temp
-		display: none;
-		background: rgba(0,0,0, .05);
-	}
-
-@include screen-desktop {
-	flex-flow: row nowrap;
+.container-fluid {
+	background-color: white;
 	
 	
-	.primary {
-		flex: 2;
-		margin-left: 7.5%;
-		
-		
+	@include screen-lg{
+		padding-left: 5em;
+		padding-right: 5em;
 	}
-	.secondary {
-		flex: 1;
-		margin-right: 7.5%;	
-		flex-flow: column nowrap;
-		text-align: left;
-		}
-}
-
-.home & {
-	flex-flow: column nowrap;
-	
-	@include screen-desktop {
-		
-		.flex-item {
-			width: 85%;
-			margin: 1em auto;
-		}
-		
-		.secondary {
-			flex-flow: row nowrap;
-		}
-		
-		.tertiary {
-			//@temp
-			display: block;
-		}
+	@include screen-md{
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 }
 
+.row {
+	margin: 1em auto 2em;
+
+&.primary {
+	border: 4px solid #686963;
+	padding: 1em;
 }
 
-footer {
-	
-	
-@include screen-desktop {
-	
-	.wrap {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: center;
-		text-align: left;
-		section {
-			flex: 1;
-		}
-	}
-}
 }

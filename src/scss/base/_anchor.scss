@@ -1,15 +1,15 @@
 a  {
+
+nav &{
+	text-decoration: none;
+}
+.contact & {
+	text-decoration: none;
+}
 	
+	text-decoration: underline;
 	
-	.contact & {
-	@include screen-desktop {
-		text-decoration: none;
-	}
-	}
-	
-	nav & {
-		color: $red;
-		text-decoration: none;
-	}
-	
+&.btn {
+	text-decoration: none;
+}
 }

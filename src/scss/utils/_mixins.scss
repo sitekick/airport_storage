@@ -1,5 +1,65 @@
-@mixin screen-desktop {
-  @media screen and (min-width: #{$screen-desktop}) {
+@mixin screen-lg {
+  @media screen and (min-width: 1200px) {
    	@content;
   }
+}
+
+@mixin screen-md {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+   	@content;
+  }
+}
+@mixin screen-md-and-up {
+  @media screen and (min-width: 992px) {
+   	@content;
+  }
+}
+@mixin screen-sm {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+   	@content;
+  }
+}
+@mixin screen-sm-and-up {
+  @media screen and (min-width: 768px) {
+   	@content;
+  }
+}
+
+@mixin screen-xs {
+  @media screen and (max-width: 767px) {
+   	@content;
+  }
+}
+
+@mixin extended-width() {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	.wrap {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	@include screen-md{
+		margin-left: -2em;
+		margin-right: -2em;		
+	
+			.wrap {
+				margin-left: 2em;
+				margin-right: 2em;
+			}
+
+	}
+	@include screen-lg{
+		margin-left: -5em;
+		margin-right: -5em;		
+			
+			.wrap {
+				margin-left: 5em;
+				margin-right: 5em;
+			}
+
+	}
 }

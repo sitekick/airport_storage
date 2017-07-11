@@ -8,10 +8,10 @@
 	<!--bower:css -->
 	<!--endbower-->
 </head>
-<body class="nothome">
-	<div class="container">
+<body>
+	<div class="container-fluid">
 		<header class="header">
-			<div class="wrap row">
+			<div class="row">
 				<div class="logo col-md-4">
 					<img src="assets/img/logo.png" alt="airport storage and garages logo" />
 				</div>
@@ -19,35 +19,39 @@
 					<a href="tel:+17578819203" class="phone">(757) 881-9203</a>
 					<p><span class="glyphicon glyphicon-map-marker"></span>599 Choptank Lane • Newport News, VA</p>
 				</div>
-			</div><!-- /.wrap -->
+			</div>
 		</header>
 		<nav>
 			<div class="wrap">
+			<div class="row">
 				<ul id="main-menu" class="nav nav-pills">
-					<li class="active"><a href="#" class="active">Home</a></li>
+					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#">Storage Suggestions</a></li>
 					<li><a href="#">Frequently Asked Questions</a></li>
 					<li><a href="#">Reserve Storage</a></li>
 				</ul>
 			</div>
+			</div><!--/.wrap-->
 		</nav>
 		<main>
-			<h1>Storage Units and Garages serving the Virginia Peninsula</h4>
+			<h1>Storage Units and Garages serving the Virginia Peninsula</h1>
 			<div class="primary row">
-				<section class="col-md-4">
-					<ul>
-						<li>Lowest price per square foot in the area</li>
-						<li>Huge storage garages with 14’ ceilings</li>
-						<li>Brand new facility with great lighting and security cameras</li>
-						<li>Ground level storage units with drive-up access</li>
-						<li>10 foot doors that trigger automatic interior lighting when opened</li>
-					</ul>
-				</section>
-				<section class="col-md-8 jumbotron">
+				<section class="col-md-8 col-md-push-4 jumbotron">
 					Photos
 				</section>
+				<section class="col-md-4 col-md-pull-8 benefits">
+					<ul>
+						<li><strong>Lowest price per square foot</strong> in the area</li>
+						<li><strong>Huge storage garages</strong> with 14’ ceilings</li>
+						<li><strong>Brand new</strong> facility with <strong>great lighting</strong> and <strong>security cameras</strong></li>
+						<li>Ground level storage units with <strong>drive-up access</strong></li>
+						<li><strong>10 ft. doors</strong> that trigger <strong>automatic interior lighting</strong> when opened</li>
+					</ul>
+				</section>
 			</div>
+			<h1>Airport Storage & Garages</h1>
 			<aside class="business-info">
+				<div class="wrap">
 				<div class="row">
 					<div class="col-md-4">
 					  	<section>
@@ -56,9 +60,9 @@
 					  	</section>
 					</div>
 					<div class="col-md-8 row">
-					  	<h2>Conveniently located near Newport News Williamsburg Intl. Airport</h4>
+					  	<h3>Conveniently located near Newport News Williamsburg Intl. Airport</h3>
 					  	<section class="col-md-6">
-					  	<h5>Open daily from 6am to 10pm</h5>
+					  	<h4>Open daily from 6am to 10pm</h4>
 					  	<p><strong>Airport Storage & Garages</strong><br>
 					  	599 Choptank Lane<br>
 					  	Newport News, VA 23602</p>
@@ -73,6 +77,7 @@
 					  	</section>
 					</div>
 				</div>
+				</div><!--.wrap-->
 			</aside>
 			<aside class="secondary row">
 				  	<section class="col-md-4">
@@ -109,6 +114,7 @@
 			</aside>		
 		</main>
 		<footer>
+			<div class="wrap">
 			<div class="row">
 				<section class="col-sm-4">
 					<p><strong>Airport Storage & Garages</strong><br>
@@ -126,6 +132,7 @@
 				<section class="col-sm-4">
 					Section 3
 				</section>
+			</div>
 			</div><!-- /.wrap -->
 		</footer>
 	</div><!-- /.container -->

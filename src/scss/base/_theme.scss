@@ -1,0 +1,44 @@
+.business-info {
+	@include extended-width();
+	background: $blue;
+	color: $white;
+	text-align: center;
+	
+	h3 {
+		margin-top: 0;
+		font-style: italic;
+	}
+	h4 {
+		margin-top: 0;
+	}
+	
+	iframe {
+		min-height: 250px;
+		margin-bottom: 1em;
+	}
+	
+	.btn-default{
+		background-color: $red;
+		color: $white;
+	}
+	
+	.wrap {
+		
+		> .row {
+			margin: 0;
+		
+			.row {
+				margin: 0;
+			}
+		}
+	}
+	
+	section {
+		padding: 0;
+	}
+
+@include screen-md-and-up{
+	text-align: left;
+}
+}
+

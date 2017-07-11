@@ -1,33 +1,19 @@
 header {
 	
-	.wrap {
-		display: flex;
-		flex-flow: column nowrap;
+	.logo {
+		text-align: center;
 	
-		.contact {
-			font-size: 1.5em;
-		}
-	
+	@include screen-md-and-up {
+		text-align: left;
+	}
 	}
 	
+	.contact {
+		text-align: center;
 	
-	
-
-@include screen-desktop {
-	
-	.wrap {
-		flex-flow: row nowrap;
-		align-items: center;
-	
-		.logo {
-			flex: 1;
-		}
-	
-		.contact {
-			flex: 2;
-			text-align: right;
-			font-size: 2em;
-		}
+	@include screen-md-and-up {
+		text-align: right;
+		
 	}
-}
+	}
 }

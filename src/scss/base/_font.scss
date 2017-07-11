@@ -1,0 +1,49 @@
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+.btn {
+	font-size: 1em;
+}
+
+
+.benefits {
+	
+	ul {
+		font-size: 1.3125em; //21px;
+	}
+}
+
+
+.phone {
+	font-size: 1.75em;
+	
+	
+	@include screen-md-and-up {
+		font-size: 2em;
+	}
+}
+
+nav {
+	font-size: 1.125em;
+}
+
+
+p {
+	
+.secondary section & {
+	font-size: .875em; //14px;
+}
+}

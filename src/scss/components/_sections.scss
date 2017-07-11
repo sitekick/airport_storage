@@ -1,0 +1,52 @@
+section {
+	margin-bottom: 2em;
+
+&.benefits {
+	
+	ul {
+		padding-left: 0;
+	}	
+}
+
+.secondary & {
+	border: 2px solid $darkGray;
+
+	p {
+		
+	@include screen-md-and-up{
+		min-height: 80px;
+	}
+	}
+	
+	table {
+		
+		caption {
+			color: $darkGray;
+		}
+		
+		background-color: #CCC;
+		
+	}
+
+
+&.col-md-4 {
+
+@include screen-md-and-up {
+	width: calc(33.33333% - 15px);
+}
+}
+@include screen-md-and-up {
+	min-height: 250px;
+	margin-right: 15px;
+
+&:last-child {
+	margin-right: 0;
+	width: 33.33333%;
+}
+}
+}
+
+@include screen-md-and-up {
+	margin-bottom: 1em;
+}
+}

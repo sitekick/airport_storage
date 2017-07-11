@@ -1,33 +1,32 @@
 nav {
+	@include extended-width();
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 	background: $darkGray;
+}
+
+.nav-pills {
 	
-	
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-flow: column nowrap;
+	> li {
 		
+		+ li {
+			margin-left: 0;
+		}
 		
-		li {
-			display: block;
-			padding: 0;
-			margin: 0;
-			flex: 1 1 auto;
-			
-			a {
-				padding: .5em 1em;
-				display: block;
-				
-			}
+		> a {
+			color: white;
+			border-radius: 0;
 		}
 	
-	@include screen-desktop {
-		flex-flow: row nowrap;
-		align-items: center;
+	&.active {
+		> a {
+			background-color: $red;
+		}
 	}
-	
+	&:hover {
+		> a {
+			background-color: $blue;
+		}
 	}
-	
+	}
 }
