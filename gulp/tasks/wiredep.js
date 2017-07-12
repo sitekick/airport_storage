@@ -5,7 +5,7 @@ var gulp 			= require('gulp'),
  
 gulp.task('bower', function(){
 	
-	gulp.src(config.bower.src + config.bower.index)
+	gulp.src(config.templates.src.tpl)
 	.pipe(wiredep({
 		ignorePath : '../',
 		fileTypes: {
@@ -17,7 +17,7 @@ gulp.task('bower', function(){
             }
         }
 		}))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest(config.templates.dest.tpl));
 });
 
 

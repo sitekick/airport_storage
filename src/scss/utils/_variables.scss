@@ -2,5 +2,20 @@
 
 $blue: 		#1B93ED;
 $red: 		#F6511D;
-$darkGray:	#686963;
+$darkGray:	#CFDBD5;
+$lightGray:	#F3F8F2;
+$black: 	#30332E;
 $white: 	#FFF;
+
+// Bootstrap Overrides //
+$icon-font-path: 			'/src/lib/bower/bootstrap-sass/assets/fonts/bootstrap/';
+
+$navbar-default-color:      $lightGray;
+$navbar-default-bg:         $black;
+
+$navbar-default-link-color:                $lightGray;
+$navbar-default-link-hover-color:          $white;
+$navbar-default-link-hover-bg:             $blue;
+$navbar-default-link-active-color:         $white;
+$navbar-default-link-active-bg:            $red;
+

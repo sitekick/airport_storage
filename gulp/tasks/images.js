@@ -6,7 +6,7 @@ var gulp 	= require('gulp'),
 gulp.task('images', function() {
   /* Copy all libraries to build folder */
   return gulp.src(config.images.src)
-    .pipe(cache('lib'))
+    .pipe(cache('images'))
     .pipe(gulp.dest(config.images.dest));
 });
 

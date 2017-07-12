@@ -5,28 +5,12 @@ nav {
 	background: $darkGray;
 }
 
-.nav-pills {
+.navbar-collapse {
 	
-	> li {
-		
-		+ li {
-			margin-left: 0;
-		}
-		
-		> a {
-			color: white;
-			border-radius: 0;
-		}
-	
-	&.active {
-		> a {
-			background-color: $red;
-		}
-	}
-	&:hover {
-		> a {
-			background-color: $blue;
-		}
-	}
-	}
+
+@include screen-sm-and-up{
+	padding-left: 0;
+	padding-right: 0;
 }
+}
+

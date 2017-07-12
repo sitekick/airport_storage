@@ -12,7 +12,8 @@ gulp.task('serve', function () {
 	bs.watch('./assets/css/style.css').on('change', bs.reload);
 	bs.watch('./assets/js/scripts.js').on('change', bs.reload);
 	bs.watch('./assets/img/**/*.{gif,png,svg,jpg}').on('change', bs.reload);
-	bs.watch('./index.php').on('change', bs.reload);
+	bs.watch('./assets/inc/*').on('change', bs.reload);
+	bs.watch('./*.php').on('change', bs.reload);
 			
 	
 });

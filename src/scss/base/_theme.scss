@@ -1,44 +1,60 @@
-.business-info {
-	@include extended-width();
-	background: $blue;
-	color: $white;
-	text-align: center;
-	
-	h3 {
-		margin-top: 0;
-		font-style: italic;
-	}
-	h4 {
-		margin-top: 0;
-	}
-	
-	iframe {
-		min-height: 250px;
-		margin-bottom: 1em;
-	}
-	
-	.btn-default{
-		background-color: $red;
-		color: $white;
-	}
-	
-	.wrap {
-		
-		> .row {
-			margin: 0;
-		
-			.row {
-				margin: 0;
-			}
-		}
-	}
-	
-	section {
-		padding: 0;
-	}
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	color: $black;
+}
 
-@include screen-md-and-up{
-	text-align: left;
+h1 {
+		
+.interior &{
+/* 	color: $blue */;
+	border-bottom: 3px solid $black;
+	margin-bottom: 1em;
+	position: relative;
+	
+	span{
+		position: absolute;
+		right: 0;
+	}
 }
 }
 
+h2 {
+	color: $blue;
+}
+
+
+dt {
+	color: $blue;
+	margin-top: 1em;
+}
+dd {
+	margin-bottom: 1em;
+}
+
+.primary {
+	
+.home & {
+	border: 4px solid $black;
+	border-radius: 8px;
+	padding: 1em;
+	margin-top: 0;
+	margin-bottom: 3em;
+}
+.interior & {
+	padding-left: 0;
+}	
+}
+
+.secondary {
+
+.home {
+	margin-bottom: 3em;
+}	
+.interior & {
+	background: $lightGray;
+	border: 2px solid $darkGray;
+	border-radius: 4px;
+}
+	
+}

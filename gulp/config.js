@@ -41,10 +41,15 @@ module.exports = {
 		dest : './assets/js',
 		src: './src/js/*.js'
 	},
-	bower:{
-		src : './src/templates/',
-		dest : './src/js/vendor',
-		index: 'index.php'
+	templates : {
+		src : {
+			tpl : './src/templates/*',
+			inc : './src/templates/include/*',
+		},
+		dest : {
+			tpl : './',
+			inc : './assets/inc'
+		}
 	}
 
 }

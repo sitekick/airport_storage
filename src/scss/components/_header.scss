@@ -3,7 +3,7 @@ header {
 	.logo {
 		text-align: center;
 	
-	@include screen-md-and-up {
+	@include screen-sm-and-up {
 		text-align: left;
 	}
 	}
@@ -11,7 +11,7 @@ header {
 	.contact {
 		text-align: center;
 	
-	@include screen-md-and-up {
+	@include screen-sm-and-up {
 		text-align: right;
 		
 	}
