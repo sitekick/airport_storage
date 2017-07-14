@@ -2,4 +2,19 @@ footer {
 	@include extended-width;
 	background: $black;
 	color: $lightGray;
+	text-align: center;
+	
+	.logo {
+		max-width: 75%;
+		margin: 0 auto 1em;
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	
+@include screen-sm-and-up{
+	text-align: left;
+}
 }

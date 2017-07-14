@@ -2,42 +2,111 @@
 	@include extended-width();
 	background: $blue;
 	color: $white;
-	text-align: center;
 	margin-bottom: 3em;
 	
 	
 	h3 {
 		margin-top: 0;
+		margin-bottom: 1em;
 		font-style: italic;
+		color: $lightGray;
 	}
-	h4 {
-		margin-top: 0;
-	}
+	
 	
 	iframe {
 		min-height: 250px;
 		margin-bottom: 1em;
 	}
 	
-	.btn-default{
-		background-color: $red;
-		color: $white;
+	.row {
+		margin: 1em auto 0;
 	}
 	
-	.wrap {
+	.buttons {
 		
-		> .row {
-			margin: 0;
 		
-			.row {
-				margin: 0;
+	@include screen-xs {
+		text-align: center;
+		
+		.btn {
+			margin: 1em auto;
+			min-width: 50%;
+		}
+	}
+	}
+	
+	
+	
+	
+	.panel {
+		background-color: transparent;
+		box-shadow: none;
+		
+		.panel-heading {
+			padding: 5px;
+			color: $yellow;
+			font-style: italic;
+			
+		}
+		
+		.panel-body{
+			padding: 5px;
+			
+			strong {
+				color: $lightGray;
+			}
+		}
+	
+	&.col-sm-6{
+		
+	
+	@include screen-sm-and-up{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: calc(50% - 20px);
+	}
+	}
+	}
+	
+	table {
+		background-color: transparent;
+		margin-bottom: 5px;
+		
+		thead {
+			> tr {
+				> th {
+					border-width: 2px;
+					border-color: $lightGray; 
+					color: $lightGray;
+				}
+			}
+		}
+		
+		
+		tbody {
+		
+			> tr {
+				
+				> td {
+					border: none;
+					text-indent: 5px;
+					padding-top: 1px;
+					padding-bottom: 1px;
+				}	
+			&:first-child{
+				
+				> td {
+					padding-top: 5px;
+				}
+			}
+			
 			}
 		}
 	}
-	
+
+
 	section {
 		padding: 0;
-		color: $lightGray;
 	}
 
 @include screen-md-and-up{

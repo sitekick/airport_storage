@@ -3,14 +3,34 @@ nav {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	background: $darkGray;
+	font-size: 1.125em;
 }
 
-.navbar-collapse {
+
+.navbar-default {
 	
+	.navbar-toggle {
+		background-color: $white;
+		//border: 1px solid red;
+	
+	&.collapsed{
+		background-color: $lightGray;
+	}
+	&:hover{
+		
+	}
+	}
+	
+	.navbar-collapse {
+		
+	
+	@include screen-sm-and-up{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	}
+}
 
-@include screen-sm-and-up{
-	padding-left: 0;
-	padding-right: 0;
-}
-}
+
+
 

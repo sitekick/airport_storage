@@ -1,7 +1,7 @@
 body {
-	font-size: 100%;
-	font-family: sans-serif;
-	color: $black;
+// 	font-size: 100%;
+// 	font-family: sans-serif;
+// 	color: $black;
 }
 
 h1 {
@@ -21,8 +21,45 @@ h1 {
 
 h2 {
 	color: $blue;
+
+.secondary &{
+	color: $black;
 }
 
+}
+
+table {
+
+	
+	
+.sedondary &{
+	
+	caption {
+		font-style: italic;
+		padding-bottom: 0;
+		color: $black;
+	}
+}	
+}
+
+.btn {
+
+
+&.btn-default{
+&:hover{
+	color: $white;
+}	
+}
+}
+
+.phone {
+	font-size: 1.75em;
+	
+	
+	@include screen-md-and-up {
+		font-size: 2.5em;
+	}
+}
 
 dt {
 	color: $blue;
@@ -52,9 +89,16 @@ dd {
 	margin-bottom: 3em;
 }	
 .interior & {
+/*
 	background: $lightGray;
 	border: 2px solid $darkGray;
 	border-radius: 4px;
+*/
 }
 	
 }
+
+.input-group {
+	font-size: 14px !important;
+}
+
