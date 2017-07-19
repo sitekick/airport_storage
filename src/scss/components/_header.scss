@@ -1,5 +1,17 @@
 header {
 	
+	a {
+		text-decoration: none;
+	&:hover {
+		text-decoration: none
+	}
+	
+	&.phone{
+		font-weight: bold;
+	}
+	
+	}
+	
 	.logo {
 		text-align: center;
 	

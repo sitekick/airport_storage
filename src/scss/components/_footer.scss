@@ -6,12 +6,9 @@ footer {
 	
 	.logo {
 		max-width: 75%;
-		margin: 0 auto 1em;
-		
-		img {
-			max-width: 100%;
-			height: auto;
-		}
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: inline-block
 	}
 	
 @include screen-sm-and-up{

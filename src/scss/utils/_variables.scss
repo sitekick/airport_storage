@@ -19,6 +19,12 @@ $navbar-default-link-hover-color:          $white;
 $navbar-default-link-hover-bg:             $blue;
 $navbar-default-link-active-color:         $white;
 $navbar-default-link-active-bg:            $red;
+
+$link-color: $blue;
+
+$dropdown-link-color: $blue;
+
+
 /* =======Font====== */
 $font-size-base:			14px;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -53,4 +59,9 @@ $table-condensed-cell-padding:  3px;
 /* =======Button====== */
 $btn-default-color:              $lightGray;
 $btn-default-bg:                 $red;
-$btn-default-border:             $red; 
+$btn-default-border:             $red;
+
+$btn-info-color:              	$black;
+$btn-info-bg:                	$lightGray;
+$btn-info-border:            	$darkGray;
+ 

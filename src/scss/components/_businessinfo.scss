@@ -24,7 +24,6 @@
 	
 	.buttons {
 		
-		
 	@include screen-xs {
 		text-align: center;
 		
@@ -35,9 +34,6 @@
 	}
 	}
 	
-	
-	
-	
 	.panel {
 		background-color: transparent;
 		box-shadow: none;
@@ -46,7 +42,6 @@
 			padding: 5px;
 			color: $yellow;
 			font-style: italic;
-			
 		}
 		
 		.panel-body{
@@ -59,7 +54,6 @@
 	
 	&.col-sm-6{
 		
-	
 	@include screen-sm-and-up{
 		margin-left: 10px;
 		margin-right: 10px;
@@ -82,7 +76,6 @@
 			}
 		}
 		
-		
 		tbody {
 		
 			> tr {
@@ -103,7 +96,6 @@
 			}
 		}
 	}
-
 
 	section {
 		padding: 0;

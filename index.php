@@ -4,7 +4,9 @@
 	<title>Airport Storage & Garages</title>
 	<meta charset="utf-8">
 	<meta description="Storage and large garages located in Newport News, VA">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<?php $page_url="http://www.storageandgarages.com"; ?>
 	<!--bower:css -->
 	<!--endbower-->
 </head>
@@ -12,10 +14,16 @@
 	<div class="container-fluid">
 		<?php include('assets/inc/header.html'); ?>
 		<main>
-			<h1>Storage Units and Garages on the Virginia Peninsula</h1>
+			<div class="page-header row">
+			<h1 class="col-sm-9">Storage Units and Garages on the Virginia Peninsula</h1>
+			<div class="col-sm-3 sharing-controls"><?php include('assets/inc/controls.php'); ?></div>
+			</div>
 			<div class="primary row">
-				<section class="col-md-8 col-md-push-4 jumbotron">
-					<?php include('assets/inc/carousel.html'); ?>
+				<section class="col-md-8 col-md-push-4 jumbotron" style="background-image: url(/assets/img/slides/slide1.jpg);">
+					<h1>Now Pre-Leasing</h1>
+					<div class="offer">
+						<h2>Save $75 <small>on first month's rent for terms of 6 months or longer</small></h2>
+					</div>
 				</section>
 				<section class="col-md-4 col-md-pull-8 benefits">
 					<ul>
